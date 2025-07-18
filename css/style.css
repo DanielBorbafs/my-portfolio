@@ -112,6 +112,11 @@ section:nth-child(4) p {
   color: rgb(255 255 255 / 70%);
 }
 
+#img_profile {
+  background-color: red;
+  width: 150px;
+}
+
 /* MOBILE */
 
 @media (width < 576px) {

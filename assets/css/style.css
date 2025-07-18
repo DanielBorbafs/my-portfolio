@@ -335,9 +335,9 @@ main {
   flex-direction: column;
   gap: 12px;
 }
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+
+#img_profile {
+  border-radius: 100%;
 }
 
 .info-content .name {
@@ -1323,6 +1323,12 @@ textarea.form-input::-webkit-resizer {
  * responsive larger than 450px screen
  */
 
+@media (-width: 380px) {
+  #img_profile {
+    margin-left: 4rem;
+  }
+}
+
 @media (min-width: 380px) {
   .sidebar-info {
     display: flex;
@@ -1993,7 +1999,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 150px;
+    width: 180px;
   }
 
   .info-content .name {
