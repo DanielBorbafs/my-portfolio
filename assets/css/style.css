@@ -330,12 +330,6 @@ main {
   gap: 15px;
 }
 
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
 #img_profile {
   border-radius: 100%;
 }
@@ -876,49 +870,39 @@ main {
   line-height: 1.6;
 }
 
-/**
- * skills 
- */
-
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
 .skills-title {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: start;
 }
 
-.skills-list {
-  padding: 20px;
-}
-
-.skills-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.skill .title-wrapper {
+.skills-section {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 1rem;
 }
 
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.skills-icons-section {
+  margin-top: 2rem;
 }
 
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
+.skills-icons-section {
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  display: flex;
 }
 
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
+.skill-list {
+  background: rgb(29, 29, 29);
+  height: 44px;
+  width: 44px;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -1335,14 +1319,6 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
     align-items: center;
   }
-  .skills-list {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-    gap: 8px;
-  }
 
   .info-content {
     text-align: center;
@@ -1352,9 +1328,6 @@ textarea.form-input::-webkit-resizer {
     margin: 0;
   }
 
-  .skills-list > .title {
-    gap: 0px;
-  }
   .project-img,
   .blog-banner-box {
     height: auto;
@@ -1366,14 +1339,6 @@ textarea.form-input::-webkit-resizer {
  */
 
 @media (min-width: 580px) {
-  /**
-   * CUSTOM PROPERTY
-   */
-  .skills-list {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-  }
   :root {
     /**
      * typography
@@ -1637,10 +1602,6 @@ textarea.form-input::-webkit-resizer {
     left: -43px;
   }
 
-  .skills-item:not(:last-child) {
-    margin-bottom: 25px;
-  }
-
   /**
    * #PORTFOLIO, BLOG
    */
@@ -1706,12 +1667,6 @@ textarea.form-input::-webkit-resizer {
 
   .has-scrollbar::-webkit-scrollbar-button {
     width: 100px;
-  }
-
-  .skills-list {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
   }
 
   /**
@@ -1810,11 +1765,6 @@ textarea.form-input::-webkit-resizer {
   /**
    * CUSTOM PROPERTY
    */
-  .skills-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
 
   :root {
     /**
